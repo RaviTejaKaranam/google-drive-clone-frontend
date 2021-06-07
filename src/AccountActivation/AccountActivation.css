@@ -1,0 +1,18 @@
+.activation-message{
+  margin-top: 10rem;
+}
+
+.welcome-message{
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+@media(max-width : 540px){
+  .welcome-message{
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .activation-message .form{
+    width: 95vw;
+  }
+}

@@ -1,0 +1,21 @@
+.file-icon{
+  color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display-files{
+  display: flex;
+  flex-wrap: wrap;
+}
+.file-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: 2px solid #aaa;
+  margin: 0.5rem;
+}
+.file-list{
+  list-style: none;
+}

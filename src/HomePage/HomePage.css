@@ -1,0 +1,11 @@
+.upload{
+  position: absolute;
+  right: 10px;
+  top: 60px;
+}
+.file-upload-button-hidden{
+  display: none;
+}
+.display-files{
+  margin-top: 2rem;
+}

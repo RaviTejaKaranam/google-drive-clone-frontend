@@ -1,0 +1,15 @@
+.login{
+  margin: 0 auto !important;
+}
+.login-image{
+  display: block;
+  width: 35rem;
+  margin : 3rem auto 1rem;
+}
+
+@media(max-width: 540px){
+  .login-image{
+    width: 95%;
+    margin: 1rem auto;
+  }
+}

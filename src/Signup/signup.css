@@ -1,0 +1,15 @@
+.signup{
+  margin: 0 auto !important;
+}
+.signup-image{
+  display: block;
+  width: 30rem;
+  margin : 5rem auto;
+}
+
+@media(max-width: 540px){
+  .signup-image{
+    width: 95%;
+    margin-bottom: 1rem;
+  }
+}

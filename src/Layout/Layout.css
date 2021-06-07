@@ -1,0 +1,30 @@
+.landing-page-image{
+  width: 42rem;
+}
+
+.landing-page-main{
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.landing-page-description{
+  margin-top: 10rem;
+}
+
+@media(max-width : 1280px){
+  .landing-page-image{
+    width: 38rem;
+  }
+}
+@media(max-width : 768px){
+  .landing-page-image{
+    width: 30rem;
+  }
+}
+
+@media(max-width : 540px){
+  .landing-page-image{
+    width: 22rem;
+  }
+}
