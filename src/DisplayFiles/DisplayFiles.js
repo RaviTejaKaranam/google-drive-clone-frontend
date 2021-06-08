@@ -9,7 +9,7 @@ const DisplayFiles = () => {
   } else {
     display = files.map((file) => {
       if (file.file) {
-        console.log(file.error.code);
+        // console.log(file.error.code);
         return (
           <div key={file.file} className="file-box">
             <li className="file-list">
