@@ -42,7 +42,10 @@ const HomePage = (props) => {
       console.log(res.data);
       const userData = JSON.parse(localStorage.getItem("user"));
       // console.log("User Data", userData);
-      if(res.data){
+      if(res.data.error){
+        
+      }
+      else{
         console.log(res.data.error)
         const setuserData = { ...userData, files: [...userData.files, res.data] };
         localStorage.setItem("user", JSON.stringify(setuserData));
