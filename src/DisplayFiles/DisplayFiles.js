@@ -8,7 +8,7 @@ const DisplayFiles = () => {
     return <p>Please add some files</p>;
   } else {
     display = files.map((file) => {
-      if (file.error.code !== "LIMIT_FILE_SIZE") {
+      if (file.file) {
         console.log(file.error.code);
         return (
           <div key={file.file} className="file-box">
