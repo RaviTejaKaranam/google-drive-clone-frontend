@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { toast, ToastContainer } from "react-toastify";
+// import { toast, ToastContainer } from "react-toastify";
 import "./DisplayFiles.css";
 const DisplayFiles = () => {
   const { files } = JSON.parse(localStorage.getItem("user"));
@@ -30,7 +30,6 @@ const DisplayFiles = () => {
   }
   return(
   <Fragment>
-    <ToastContainer />
     <div className="display-files">{display}</div>
   </Fragment>
   )
