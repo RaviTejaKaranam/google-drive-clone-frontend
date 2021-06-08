@@ -28,7 +28,11 @@ const HomePage = (props) => {
     data.append("id", _id);
     //post request to upload file in AWS S3
     try {
-      const res = await axios.post(
+      let res;
+      if(res === undefined){
+        toast.info("Uploading")
+      }
+      res = await axios.post(
         `${process.env.REACT_APP_API}/file-upload`,
         data,
         {
