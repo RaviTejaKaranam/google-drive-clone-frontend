@@ -8,7 +8,7 @@ const DisplayFiles = () => {
   } else {
     display = files.map((file) => {
       if(!file.file){
-        console.log(file)
+        console.log(file.error.code)
       }
       return (
         <div key={file.file} className="file-box">
