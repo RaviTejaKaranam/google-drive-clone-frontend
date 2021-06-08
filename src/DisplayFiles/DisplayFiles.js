@@ -5,7 +5,7 @@ const DisplayFiles = () => {
   const { files } = JSON.parse(localStorage.getItem("user"));
   let display;
   if (!files.length) {
-    return <p>Please add some files</p>;
+    return <h2 className = "text-muted text-center">Please add some files</h2>;
   } else {
     display = files.map((file) => {
       if (file.file) {
