@@ -38,6 +38,7 @@ const SignupCard = () => {
       try{
         let res = await axios.post(`${process.env.REACT_APP_API}/signup`,{name : userDetails.name, email : userDetails.email, password : userDetails.password})
         let data = res.data
+        console.log(data)
         setUserDetails((prevState) => ({
           ...prevState,
           name : "",
