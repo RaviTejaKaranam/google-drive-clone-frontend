@@ -53,7 +53,7 @@ const HomePage = (props) => {
       toast.success("File added successfully");
     } catch (error) {
       console.log(error);
-      toast.message(error.message)
+      // toast.message(error.message)
     }
   };
   return (
