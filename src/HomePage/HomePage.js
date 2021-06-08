@@ -60,7 +60,7 @@ const HomePage = (props) => {
       
     } catch (error) {
       console.log(error);
-      toast.message(error.message)
+      toast.error(error.message)
     }
   };
   return (

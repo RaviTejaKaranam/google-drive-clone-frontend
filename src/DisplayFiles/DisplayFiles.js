@@ -23,7 +23,7 @@ const DisplayFiles = () => {
           </div>
         );
       } else {
-        // toast.error("File limit exceeded");
+        toast.error("File limit exceeded");
       }
     });
   }
