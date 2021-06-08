@@ -43,7 +43,7 @@ const HomePage = (props) => {
       const userData = JSON.parse(localStorage.getItem("user"));
       // console.log("User Data", userData);
       if(res.data.error){
-        
+        toast.error("File size limit exceeded")
       }
       else{
         console.log(res.data.error)
