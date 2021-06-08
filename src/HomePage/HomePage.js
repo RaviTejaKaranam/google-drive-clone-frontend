@@ -42,15 +42,18 @@ const HomePage = (props) => {
       console.log(res.data);
       const userData = JSON.parse(localStorage.getItem("user"));
       // console.log("User Data", userData);
-      const setuserData = { ...userData, files: [...userData.files, res.data] };
+      if(!res.data.error){
+        const setuserData = { ...userData, files: [...userData.files, res.data] };
+        localStorage.setItem("user", JSON.stringify(setuserData));
+        const { files } = JSON.parse(localStorage.getItem("user"));
+        setFiles((prevState) => ({
+          ...prevState,
+          files,
+        }));
+        toast.success("File added successfully");
+      }
       // console.log("Set User Data", setuserData);
-      localStorage.setItem("user", JSON.stringify(setuserData));
-      const { files } = JSON.parse(localStorage.getItem("user"));
-      setFiles((prevState) => ({
-        ...prevState,
-        files,
-      }));
-      toast.success("File added successfully");
+      
     } catch (error) {
       console.log(error);
       toast.message(error.message)
